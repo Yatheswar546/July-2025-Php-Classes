@@ -1,0 +1,84 @@
+Git Bash & GitHub - Introduction
+
+Git Bash is a command-line tool for Windows that provides a Git command-line experience similar to a Unix shell. It lets you run Git commands and interact with your repositories using Bash commands.
+
+GitHub is a cloud-based platform for version control and collaboration. It hosts Git repositories and allows developers to store, share, and manage code with features like pull requests, issues, and project management tools.
+
+In simple terms, we will use Git & GitHub to host our projects publicly so they are visible to other developers, recruiters or interviewers etc.. and to show our work.
+Also during internal projects it will be easy to share our project with our team members and do changes to code and update them easily. In this case the code will be private.
+
+==================================================================================
+
+To use GitBash & Github:
+1. We need to install Gitbash - https://git-scm.com/downloads
+2. We need to create a Github Account - https://github.com/
+
+==================================================================================
+
+Pushing our project files from local machine to Github:
+
+1. Create a Github Repository from your account in github.com (Eg: googlepage)
+2. If you are using the GitBash & GitHub for first then you need to login in Git using the below commands
+ 
+    git config --global user.name "yourusername"
+    git config --global user.email "your@email.com"
+
+3. Copy the path of your project folder (googlepage) from your local machine and open GitBash.
+4. change the path in GitBash 
+    cd "C:\Users\Yathe\OneDrive\Desktop\July-2025\googlepage"
+5. when you created a repository in Github it will display 6 commands which are used to connect our project folder to git and push files you can use them one-by-one as below:
+
+    git init 
+    git add .
+    git commit -m "first commit"
+    git branch -M main 
+    git remote add origin https://github.com/Yatheswar546/googlepage.git
+    git push -u origin main
+
+    With these commands you can connect your project folder from local machine to Git and push the files into GitHub.
+
+==================================================================================
+
+Front-End Hosting from GitHub:
+
+Any project that is developed using HTML, CSS, Js can be hosted using GitHub. You can achieve that using the below steps:
+1. Open the desired Repository
+2. Go to Settings
+3. Click on "Pages"
+4. Under "Branch" by default it is set to "none"
+5. Change from "none" to "main" and click on "Save"
+6. Refresh the page after sometime, you will get a hosting link like this - https://yatheswar546.github.io/googlepage/
+
+==================================================================================
+
+Updating an existing Repository:
+
+We will do many changes in our project even though after creating a repository for it. To update those changes in the GitHub you can follow the below steps:
+
+1. Copy the path of your project folder (googlepage) from your local machine and open GitBash.
+2. change the path in GitBash 
+    cd "C:\Users\Yathe\OneDrive\Desktop\July-2025\googlepage"
+3. Use the below commands for Updating
+
+    git add .
+    git commit -m "first commit"
+    git push -u origin main
+
+    The repository will be updated with new changes
+
+==================================================================================
+
+NOTE:
+
+If you ever encounter the below error while using "git remote add origin https://........" command
+
+error: remote origin already exists
+
+It means the origin is already set so we cannot add a new origin to resolve we need to remove the origin and add again like this 
+
+    git remote remove origin
+    git remote add origin https://github.com/Yatheswar546/googlepage.git
+
+After this we can use the push command and push our files into GitHub
+
+==================================================================================

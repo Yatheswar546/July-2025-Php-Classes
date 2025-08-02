@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", "Libertinus Sans", sans-serif;
 }
 
 .container {
@@ -27,11 +29,13 @@
 }
 
 .heading h1 {
+    font-family: "Libertinus Sans", sans-serif;
     font-size: 40px;
     color: rgb(25, 25, 225);
 }
 
 .heading h4 {
+    font-family: "Libertinus Sans", sans-serif;
     color: #3f3e3e;
     font-size: 18px;
 }

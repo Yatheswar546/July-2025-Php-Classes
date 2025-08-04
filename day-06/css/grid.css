@@ -39,7 +39,7 @@ h1{
 
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     
     .images{
         grid-template-columns: repeat(1,1fr);

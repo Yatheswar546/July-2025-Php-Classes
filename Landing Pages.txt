@@ -123,6 +123,7 @@ Major project - Music Festival
 
 • code : https://github.com/shafiuzma33/Music-Festival.git
 My website : https://shafiuzma33.github.io/Music-Festival/
+
 • navbar :https://youtu.be/Jhxmc7k7JnQ?si=MumpMVaql1ibOkTN
 • body :https://youtu.be/Jhxmc7k7JnQ?si=MumpMVaql1ibOkTN
 • footer :https://youtu.be/lLdzlLL33G8?si=8TBfZN4sDHGF-twx
@@ -146,6 +147,7 @@ Footer yt: https://youtu.be/YOb67OKw62s?si=U_DJQSo05oWdi2rB
 Y.lokesh(coffe shop-major project)
 code:https://github.com/lokeshreddyyama/Coffeshop-Website.git
 host:https://lokeshreddyyama.github.io/Coffeshop-Website/ 
+
 navbar:https://youtu.be/oLgtucwjVII?si=aIYz9oGuMCn-mTaM
 blogsection:https://youtu.be/za-QGYtQU1Y?si=I2G7NFncbZcxXX22
 footer:https://youtu.be/4JQ3q0LVqEI?si=SRpODKxuVGLxVRF0

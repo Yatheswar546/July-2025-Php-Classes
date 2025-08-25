@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: #fff;
+    padding: 30px 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-container .condition {
+    font-size: 14px;
+    font-weight: 100;
+    color: #464545;
+    padding: 0 10px;
+}
+
+.login-container #btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-container #btn-submit:hover {
+    background: #1b5ed7;
+}
+
+#username-err {
+    color: red;
+    font-size: 16px;
+    letter-spacing: 1;
+    margin: 10px 0;
+    padding: 0 10px;
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px 15px;
+    }
+
+    .login-container h2 {
+        font-size: 22px;
+    }
+
+    .login-container input,
+    .login-container button {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <h1>jQuery</h1>
+
+    <!-- 
+        => It is a Js library.
+        => It is a fast, lightweight and feature-rich
+        => It is based on the principle "write less, do more".
+        => If you plan to use it then you wouldn't have to worry about browser support because
+            it is supported by all the major browsers like Chrome, Firefox, Safari, Internet Explorer etc...
+
+        jQuery helps with:
+        1) HTML/DOM Manipulation
+        2) CSS Manipulation
+        3) Handling HTML Event
+        4) Effects and Animations
+        5) Making AJAX Calls
+
+        Advantages of jQuery:
+        1) Save lots of time:
+            It provides you with tons of in-built functionalities that you can directly use or 
+            else you would have to write it yourself using JavaScript.
+
+        2) Simplify common JavaScript tasks:
+            It helps you write the same functionality with lesser lines of code than JavaScript.
+
+        =======================================================================================================
+
+        Import jQuery CDN from official website: https://releases.jquery.com/
+
+        =======================================================================================================
+
+        Selectors and Filters:
+
+        Basic Syntax to use jQuery:  
+            $(selector).method()
+            
+        ==> $        : used to access jQuery
+        ==> selector : used to find HTML elements
+        ==> method() : used to perform some action on selected element(s).
+
+        Selectors and Filters provide a way of finding and extracting information from our web page.
+
+        (i) Selectors are used to select the HTML elements using CSS-like selectors.
+            Eg: $('p')
+                The above statement will select all HTML elements with <p> tag.
+                
+                $('#navbar')
+                $('.container')
+                $('li')
+        
+        (ii) Filters are used to refine the results returned from the selectors.
+             Eg: $('p:first')
+                 This ":something" is a filter which selects the first paragraph returned by $('p') selector.
+                 The above line of code can also be written like this - $('p').first()
+                
+                 $('input[type]')
+                 $('input[type=text]')
+                 $('list-item').eq(2) ==> 3rd element
+
+
+
+    
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

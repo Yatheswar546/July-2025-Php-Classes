@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js - AJAX</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <h1>AJAX - Asyncrhonous JSON and XML</h1>
+
+    <!-- 
+        XML - eXtensible MarkUp Language:
+        It is a markup language that is designed to store and transport data in a structured format.
+        It is used before JSON but the data transfer is difficult because it is in HTML format.
+        
+        Example:
+        <?xml version="1.0" encoding="UTF-8"?>
+        <bookstore>
+            <book id="1">
+                <title>Learning XML</title>
+                <author>John Smith</author>
+                <price>29.99</price>
+            </book>
+            <book id="2">
+                <title>Advanced JavaScript</title>
+                <author>Mary Johnson</author>
+                <price>39.99</price>
+            </book>
+        </bookstore>
+
+        ===============================================================================================================
+
+        AJAX:
+        It allows web pages to be updated asynchronously (run independently) by exchanging data with backend.
+        This makes it possible to update parts of webpage without reloading the entire page.
+
+        Examples: 
+        1) When we use instagram and like a post only the count part is reloaded rather than the entire page.
+        2) When we type in search box (Google Page), it shows suggestions without refreshing whole page.
+
+        Initially, AJAX was used to send and receive XML because that was how the data was received from the backend earlier.
+        But now it can also be used to send/receive JSON objects, which is pretty common these days.
+
+        ==> AJAX is not a programming language (or) tool but it is a technique for creating better, faster and 
+        more interactive web-applications.
+
+        ==> It is used to send/receive JSON objects.
+
+        Asynchronous Code:
+        It executes a specific part of code such that execution starts and runs in background which allows rest of code 
+        to be executed independently.
+        Running code in background is called Asynchronous Execution.
+
+        -------------------------------------------------------------------------------------
+
+        AJAX is a combination of:
+        1) XMLHttpRequest Object ==> to request data from a web server
+        2) Js and HTML DOM       ==> to display or use the data
+
+        How AJAX Works:
+        1st Stage (Browser):
+            1. An Event Occurs.......
+            2. Create an XMLHttpRequest Object
+            3. Send HttpRequest
+        
+        2nd Stage (Server):
+            4. Process HttpRequest
+            5. Create a response and send back to the browser
+
+        3rd Stage (Browser):
+            6. Process the returned data using JavaScript
+            7. Updates Page Content
+
+        -------------------------------------------------------------------------------------
+
+        XMLHttpRequest Object: The keystone of AJAX. AJAX uses a browser built-in XML HttpRequest object to make requests
+        to back-end server. This gave a simple and standard way to make HTTP requests from JavaScript to get content and 
+        update HTML page.
+
+        1) Create an XMLHttpRequest Object.
+        2) Defines a Callback function.
+        3) Open the XMLHttpRequest Object.
+        4) Send a Request to a server.
+
+        Steps to create:
+        1) Create an XMLHttpRequest Object: We have to create an instance of XMLHttpRequest Object.
+
+            var xhr = new XMLHttpRequest();
+
+        2) Defines a Callback function: Create a callback function that need to be executed when response is ready.
+
+            xhr.onload = function(){
+                ..............
+                ..............
+            }            
+
+            here, onload is XML property.
+
+        3) Open the XMLHttpRequest Object: we can use "open()".
+
+            xhr.open('GET', 'URL', true);
+            
+            GET  - HTTP method
+            URL  - to retrieve data
+            true - should be asynchronous or not
+
+        4) Send a Request to a server: we can use "send()".
+
+            xhr.send()        ===> to send the request (GET)
+            xhr.send(string)  ===> to send the request (POST)
+
+        Example: 
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('GET', 'https://api.example.com', true);
+
+        xhr.onload = function(){
+            
+            if(xhr.status === 200){
+                var response = xhr.responseText;
+                console.log(response);
+            }
+            else{
+                console.log('Error ' + xhr.status);
+            }
+        };
+
+        xhr.send();
+
+
+        XML Server Responses:
+        1) responseText            - response data as string
+        2) reponseXML              - response data as XML data
+        3) getResponseHeader()     - specific header information
+        4) getAllResponseHeaders() - all headers information
+
+        HTTP Requests:
+        GET     -  fetching the data 
+        POST    -  creating the data
+        PUT     -  updating the data
+        DELETE  -  deleting the data
+
+        HTTP Responses:
+        100-199  - Information
+        200-299  - Success
+        300-399  - Redirect
+        400-499  - Client Error
+        500-599  - Server Error
+
+    -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

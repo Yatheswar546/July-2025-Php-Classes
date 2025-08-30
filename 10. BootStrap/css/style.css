@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* h1{
+    color: red;
+    font-size: 48px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+h1{
+    display: block;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+
+.card{
+    height: 400px;
+}
+
+.card .btn{
+    background-color: rgb(0, 255, 55);
+    color: #000;
+}
+
+.forms-section{
+    margin-top: 100px;
+}

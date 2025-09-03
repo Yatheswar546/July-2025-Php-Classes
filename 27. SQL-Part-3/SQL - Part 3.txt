@@ -1,0 +1,122 @@
+SQL - Part 3
+
+Constraints:
+SQL constraints are used to specify rules for data in a table.
+
+NOT NULL       - Ensures that a column cannot have a NULL value
+UNIQUE         - Ensures that all values in a column are different
+PRIMARY KEY    - A combination of a NOT NULL and UNIQUE. Uniquely identifies each row in a table
+FOREIGN KEY    - Prevents actions that would destroy links between tables
+CHECK          - Ensures that the values in a column satisfies a specific condition
+DEFAULT        - Sets a default value for a column if no value is specified
+CREATE INDEX   - Used to create and retrieve data from the database very quickly
+AUTO INCREMENT - Auto-increment allows a unique number to be generated automatically when a new record is inserted into a table.
+
+Data Types:
+
+
+==============================================================================================
+
+SQL Window Functions 
+
+Introduction: Window functions are SQL functions that perform calculations across a "set of table rows related to the current row".
+Unlike aggregate functions (`SUM`, `AVG`) which collapse rows into one result per group, window functions keep all rows intact.
+
+Use case:
+-> Rank employees by salary
+-> Calculate running totals
+-> Find difference from average per group
+
+Syntax Overview:
+
+<window_function>() OVER (
+    [PARTITION BY column1, column2, ...]  -- optional, defines groups
+    [ORDER BY column3 [ASC|DESC]]         -- optional, defines order
+)
+
+Key points:
+
+-> `PARTITION BY` → divides data into groups (like `GROUP BY` but keeps all rows)
+-> `ORDER BY` → defines the order in which the function is applied
+-> Window functions "do not remove rows"
+
+Common Window Functions:
+
+a) ROW_NUMBER():
+
+Assigns a unique sequential number to each row in a partition.
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    ROW_NUMBER() OVER (PARTITION BY department_id ORDER BY salary DESC) AS row_num
+FROM employees;
+
+Use case: Pick top 1 salary in each department.
+
+b) RANK():
+
+Gives ranks to rows within a partition. Equal values get the same rank, but the next rank is skipped.
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS rank
+FROM employees;
+
+c) DENSE_RANK():
+
+Similar to `RANK()`, but no ranks are skipped.
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    DENSE_RANK() OVER (PARTITION BY department_id ORDER BY salary DESC) AS dense_rank
+FROM employees;
+
+d) SUM(), AVG(), MIN(), MAX() as Window Functions:
+
+We can calculate cumulative totals, moving averages, etc.
+
+Cumulative salary per department:
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    SUM(salary) OVER (PARTITION BY department_id ORDER BY salary) AS cumulative_salary
+FROM employees;
+
+Average salary per department (for each row):
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    AVG(salary) OVER (PARTITION BY department_id) AS avg_salary
+FROM employees;
+
+e) LEAD() and LAG():
+
+Access the next or previous row’s value in the same result set.
+
+Next salary in department:
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    LEAD(salary, 1) OVER (PARTITION BY department_id ORDER BY salary) AS next_salary
+FROM employees;
+
+Previous salary in department:
+
+SELECT
+    employee_id,
+    department_id,
+    salary,
+    LAG(salary, 1) OVER (PARTITION BY department_id ORDER BY salary) AS previous_salary
+FROM employees;

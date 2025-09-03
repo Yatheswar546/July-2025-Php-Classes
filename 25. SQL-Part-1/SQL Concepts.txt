@@ -34,6 +34,8 @@ Types of JOINs:
 15. FULL JOIN (if supported by the DBMS)
 16. Aliases using AS
 
+===================================================================
+
 Data Modification
 17. INSERT INTO
 18. UPDATE
@@ -43,13 +45,27 @@ Table Management (Basics Only)
 20. CREATE TABLE
 21. ALTER TABLE
 22. DROP TABLE
+23. TRUNCATE TABLE
+
+===================================================================
 
 Constraints & Data Types (Intro)
-23. Primary key
-24. Foreign key
-25. Unique
-26. Not Null
+23. Not Null
+24. Unique
+25. Primary key
+26. Foreign key
+27. Check 
+28. default
+29. Create Index
+30. Auto Increment
 
-27. Data types: INT, VARCHAR, DATE, BOOLEAN, etc.
+31. Data types: INT, BIGINIT, VARCHAR, TEXT, DATE, TIMESTAMP, BOOLEAN, BLOB etc.
 
-28. SQL Window Functions
+===================================================================
+
+SQL Window Functions
+28. ROW_NUMBER()
+29. RANK()
+30. DENSE_RANK()
+31. SUM(), AVG(), MIN(), MAX()
+32. LEAD() and LAG()

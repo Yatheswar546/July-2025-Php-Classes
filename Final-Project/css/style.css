@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(20, 247, 69);
+}
+
+.forms{
+    width: 35%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+}
+
+.forms input{
+    border: 1px solid #807e7e;
+}
+
+.forms label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    /* color: rgb(11, 15, 242); */
+}
+
+a:hover{
+    color: blue;
+}
+
+form div{
+    margin-bottom: 10px !important;
+}
+
+.login-form{
+    width: 25%;
+}
+
+.message{
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    padding: 7px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+
+/********* NAVBAR ************/
+nav.navbar {
+    display: flex;
+    background-color: #333;
+    height: 100px;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.navbar .logo h1 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    margin-left: 100px;
+}
+
+.navbar ul.links {
+    display: flex;
+    line-height: 60px;
+    list-style: none;
+    margin-right: 100px;
+}
+
+.navbar .links li {
+    padding: 20px;
+}
+
+.navbar .links li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar i {
+    font-size: 30px;
+    color: #fff;
+    line-height: 100px;
+}
+
+.menu_open,
+.menu_close {
+    display: none;
+}
+
+.logout{
+    text-transform: uppercase;
+    color: red !important;
+    font-weight: bold;
+}
+
+@media(max-width: 980px) {
+
+    .menu_open,
+    .menu_close {
+        display: block;
+        margin-right: 100px;
+    }
+
+    .navbar ul.links {
+        /* z-index: 100; */
+        display: none;
+        position: absolute;
+        /* display: block; */
+        background-color: #333;
+        top: 0;
+        right: -500px;
+        height: 100%;
+        width: 300px;
+        transition: all ease 1s;
+    }
+
+    .navbar ul.links.active {
+        right: -100px;
+        display: block;
+    }
+}
+
+
+/********* BANNER ************/
+.banner{
+    min-height: 80vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 45px;
+}

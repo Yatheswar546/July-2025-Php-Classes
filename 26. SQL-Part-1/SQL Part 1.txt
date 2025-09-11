@@ -1,0 +1,91 @@
+MySQL : Day 1
+ 
+Online SQL Compiler - https://www.programiz.com/sql/online-compiler
+
+----- SELECT ----------
+  
+Synatx : SELECT column_name(s), * FROM table_name;
+SELECT first_name, age FOM Customers;
+SELECT * FROM Customers;
+
+----- DISTINCT ---------- 
+Syntax: SELECT DISTINCT column_name(s), * FROM table_name;
+SELECT DISTINCT country FROM customers;
+
+----- WHERE ---------- 
+Syntax: SELECT * FROM table_name WHERE condition;
+SELECT * FROM Customers WHERE customer_id=1;
+
+--------- LOGICAL OPERATORS ------------------
+SELECT * FROM Customers WHERE age>=22 AND country = "USA";
+SELECT * FROM Orders WHERE customer_id=1 OR customer_id=4;
+SELECT * FROM Shippings WHERE NOT status = 'Delivered';
+
+--------- COMPARISON OPERATORS ------------------
+SELECT * FROM Customers WHERE age>=22;
+SELECT * FROM Customers WHERE age<25;
+SELECT * FROM Shippings WHERE status != 'Delivered';
+
+SELECT * FROM Orders WHERE amount BETWEEN 301 AND 15000;
+
+SELECT * FROM Customers WHERE last_name LIKE 'R%';
+SELECT * FROM Customers WHERE first_name LIKE 'J%';
+SELECT * FROM Shippings WHERE status LIKE '%ing';
+SELECT * FROM Orders WHERE item LIKE '_o%';
+SELECT * FROM Customers WHERE first_name LIKE '%o%';
+
+R% = R____________
+%R = _______R
+__%v = __v
+_%e = _e
+
+SELECT *  FROM Customers WHERE country = 'USA' OR country = 'UK';
+SELECT * FROM Customers WHERE Country IN ('USA', 'UK');
+
+==============================================
+
+---- ORDER BY --------
+Syntax: SELECT * FROM table_name ORDER BY column_name ASC/DESC;
+SELECT * FROM Customers ORDER BY age;
+SELECT * FROM Customers ORDER BY age DESC;
+SELECT * FROM Orders ORDER BY amount ASC;
+
+SELECT * FROM Customers ORDER BY Country ASC, first_name DESC;
+SELECT * FROM Customers ORDER BY first_name DESC, Country ASC;
+
+------ LIMIT -------------
+Syntax: SELECT * FROM table_name LIMIT number;
+SELECT * FROM Customers LIMIT 3;
+
+-- To query top 10 users whose shopping price > 25000 -- 
+SELECT * FROM Customers 
+WHERE shopping_price > 25000 
+ORDER BY shopping_price DESC
+LIMIT 10;
+
+==========================================================
+
+---------- Aggregate Functions ------------
+SELECT COUNT(*) FROM customers; 
+SELECT SUM(amount) FROM Orders;
+SELECT AVG(age) FROM Customers;
+SELECT MAX(age) FROM Customers;
+SELECT MIN(amount) FROM Orders;
+
+---------- GROUP BY ------------
+Syntax: SELECT * FROM table_name GROUP BY column_name;
+SELECT * FROM Customers GROUP BY age ORDER BY customer_id DESC;
+
+---------- HAVING ------------
+SELECT * FROM Orders WHERE amount>350;
+
+Syntax: SELECT * FROM table_name GROUP BY column_name HAVING condition;
+SELECT * FROM Orders GROUP BY customer_id HAVING amount>350;
+
+---------- HAVING v/s WHERE ------------
+SELECT * FROM Customers
+GROUP BY Country
+HAVING AVG(age) > 23;
+
+SELECT * FROM Customers
+WHERE AVG(age) > 23;

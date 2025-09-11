@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+:root{
+    --blue: #287bff;
+    --white: #fff;
+    --grey: #f5f5f5; 
+    --black1: #222;
+    --black2: #999;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.admin-btn{
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    background-color: blueviolet;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+}
+.admin-btn:hover{
+    background-color: rgb(97, 3, 185);
+    cursor: pointer;
+}
+
+/*************** MAIN SECTION ***********************/
+.main{
+    position: absolute;
+    width: calc(100% - 300px);
+    left: 300px;
+    min-height: 100vh;
+    background: var(--white);
+    transition: 0.5s;
+}
+.main.active{
+    width: calc(100% - 80px);
+    width: 80px;
+}
+
+/************** ADMIN CONTENT ********************/
+.admin-content{
+    position: absolute;
+    top: 10%;
+    transform: translateX(-10%);
+    width: 100%;
+    height: fit-content;
+    padding: 40px 80px;
+    /* overflow-y: scroll; */
+    border: 1px solid red;
+}
+.admin-content .page-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.admin-content table{
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+th, td{
+    padding: 15px;
+    text-align: left;
+    border-bottom:  1px solid lightgrey;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.edit{
+    color: green;
+    text-decoration: none;
+}
+.delete{
+    color: red;
+    text-decoration: none;
+}   
+.view{
+    color: blue;
+    text-decoration: none;
+}
+.view:hover,
+.edit:hover,
+.delete:hover{
+    text-decoration: underline;
+}
+
+/***************** create posts ********************/
+.admin-content .content .btn-blg{
+    border: none;
+}
+.admin-content .content form div{
+    margin-bottom: 30px;
+}
+.admin-content .content form label{
+    display: block;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.admin-content .content form input{
+    padding: 10px;
+    width: 100%;
+} 
+.admin-content .content form select{
+    padding: 8px;
+    width: 100%;
+}
+
+.admin-content .content form .gender{
+    position: relative;
+}
+.admin-content .content form .gender input{
+    position: absolute;
+    top: 18%;
+    left: -45%;
+    padding: 0px;
+}
+.admin-content .content form .gender label{
+    position: relative;
+    right: -8%;
+    top: -12%;
+}
+
+/********** MESSAGES (ERROR & SUCCESS) ****/
+.error_msg
+{   
+    padding: 8px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(229, 58, 58);
+}
+.success_msg{
+    padding: 5px;
+    color: #000;
+    background: rgb(58, 229, 69);
+}

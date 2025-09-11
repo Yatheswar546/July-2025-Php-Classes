@@ -1,0 +1,112 @@
+SQL Introduction:
+
+Introduction to Databases
+A database is a collection of organized data that can be easily accessed, managed, and updated.
+
+🧠 Why use databases?
+ -> To store large amounts of information efficiently.
+ -> To retrieve data quickly.
+ -> To keep data consistent and secure.
+
+Real-world examples:
+1) Instagram stores user profiles, posts, and messages in databases.
+2) Banks store account and transaction details in databases.
+
+=====================================================================
+
+📂 Types of Databases
+There are different types of databases based on how they store data:
+
+1. Relational Databases (RDBMS)
+
+-> Data is stored in tables (rows and columns).
+-> Tables are related to each other using keys.
+Example: MySQL, PostgreSQL.
+
+2. Non-Relational (NoSQL) Databases
+
+-> Data is stored in formats like JSON (JavaScript Object Notation), key-value pairs, or graphs.
+-> Used when data is unstructured or rapidly changing.
+Example: MongoDB, Cassandra.
+
+3. In-Memory Databases
+
+-> Stores data in memory (RAM) for very fast access.
+Example: Redis.
+
+4. Cloud Databases
+
+-> Managed and accessed through the cloud.
+Example: Amazon RDS, Google BigQuery.
+
+=====================================================================
+
+RDBMS vs DBMS
+Feature	                  DBMS	                             RDBMS
+Structure	        Stores data as files	           Stores data in tables
+Relationships	  No relationships between data	     Supports relationships with keys
+Data Integrity	         Limited	             Enforces integrity with constraints
+Example	                 MS Access	                 MySQL, PostgreSQL, Oracle
+
+Data Integrity ensures the accuracy, consistency, and reliability of data throughout its lifecycle, 
+including during storage, retrieval, and processing. 
+It prevents invalid or corrupted data from entering or existing in a database.
+
+Users - UserID, Name, Email, .......................
+Marks - UserID, C, Web Development, ML, AI.......................
+
+=====================================================================
+
+🎯 Popular RDBMS
+
+1.MySQL
+
+-> Open-source, widely used.
+-> Common in web development.
+
+2. PostgreSQL
+
+-> Open-source, powerful features.
+-> Great for complex applications.
+
+3. SQLite
+
+-> Lightweight and file-based.
+-> Used in mobile apps and small applications.
+
+4. Oracle
+
+-> Paid and highly secure.
+-> Used in large enterprises.
+
+5. SQL Server (Microsoft)
+
+-> Paid, integrates well with Windows apps.
+
+=====================================================================
+
+
+📊 Basic Database Terminology
+
+1. Database: A container that holds related data (like a folder).
+
+2. Table: Stores data in rows and columns (like an Excel sheet).
+
+3. Row (Record): A single entry in a table.
+
+4. Column (Field): A specific attribute of the data.
+
+Example:
+A table called Students:
+
+ID	Name	Age	Grade
+1	Rahul	15	A
+2	Priya	14	B
+
+Database: "SchoolDB"
+
+Table: "Students"
+
+Columns: ID, Name, Age, Grade
+
+Row: 1, Rahul, 15, A

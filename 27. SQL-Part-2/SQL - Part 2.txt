@@ -1,0 +1,142 @@
+SQL - Part 2
+
+What is SQL JOIN ?
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+
+------------------ INNER JOIN ------------------
+---- Syntax ----
+-- SELECT column_name(s)
+-- FROM table1
+-- INNER JOIN table2
+-- ON table1.column_name = table2.column_name;
+
+-- SELECT first_name, last_name, item
+-- FROM Customers
+-- INNER JOIN Orders
+-- ON customers.customer_id = orders.customer_id;
+
+SELECT first_name, last_name, status
+FROM Customers
+INNER JOIN Shippings
+ON customers.customer_id = shippings.customer;
+
+==================================================
+
+
+------------------ LEFT (OUTER) JOIN ------------------
+---- Syntax ----
+-- SELECT column_name(s)
+-- FROM table1
+-- LEFT JOIN table2
+-- ON table1.column_name = table2.column_name;
+
+SELECT first_name, age, amount
+FROM Customers
+LEFT JOIN Orders
+ON Customers.customer_id = Orders.customer_id;
+
+==================================================
+
+------------------ RIGHT (OUTER) JOIN ------------------
+---- Syntax ----
+-- SELECT column_name(s)
+-- FROM table1
+-- RIGHT JOIN table2
+-- ON table1.column_name = table2.column_name;
+
+SELECT first_name, age, amount
+FROM Customers
+RIGHT JOIN Orders
+ON Customers.customer_id = Orders.customer_id;
+
+==================================================
+
+------------------ FULL OUTER JOIN ------------------
+---- Syntax ----
+-- SELECT column_name(s)
+-- FROM table1
+-- FULL OUTER JOIN table2
+-- ON table1.column_name = table2.column_name;
+
+SELECT first_name, age, amount
+FROM Customers
+FULL OUTER JOIN Orders
+ON Customers.customer_id = Orders.customer_id;
+
+==================================================
+
+------------------ CROSS JOIN ------------------
+---- Syntax ----
+-- SELECT column_name(s)
+-- FROM table1
+-- CROSS JOIN table2
+
+SELECT *
+FROM Customers
+CROSS JOIN Orders;
+
+==================================================
+
+------------- Alias (AS) ---------------
+
+SELECT old_column_name AS new_column_name FROM table_name;
+
+==================================================
+
+-------- CREATE TABLE ----------
+
+id, name, email, phone_number, age
+
+CREATE TABLE table_name (
+	column_name data_type,
+	column_name data_type,
+	column_name data_type,
+	.
+	.
+	.
+	column_name data_type
+);
+
+===============================================
+
+-------- INSERT ----------
+INSERT INTO table_name (column_name1, column_name2.....) VALUES (value1, value2......);
+
+===============================================
+
+-------- UPDATE ----------
+UPDATE table_name
+SET column1 = value1, column2 = value 2............
+WHERE condition;
+
+===============================================
+
+--------- DELETE -----------
+DELETE FROM table_name WHERE condition;
+
+Delete any specific record or entire all records
+
+
+===============================================
+
+--------- TRUNCATE -----------
+TRUNCATE TABLE table_name;
+Deletes only entire data inside table but table exists
+
+===============================================
+
+--------- DROP -----------
+DROP TABLE table_name;
+Deletes entire table data including table itself (table doesn't exist)
+
+===============================================
+
+--------- ALTER -----------
+ALTER TABLE table_name
+ADD column_name datatype;
+
+ALTER TABLE table_name 
+DROP COLUMN column_name;
+
+================================================

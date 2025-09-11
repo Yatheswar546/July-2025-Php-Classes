@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", "Libertinus Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    /* border: 3px solid red; */
+}
+
+.blogs {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid blue; */
+}
+
+.heading {
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.heading h1 {
+    font-family: "Libertinus Sans", sans-serif;
+    font-size: 40px;
+    color: rgb(25, 25, 225);
+}
+
+.heading h4 {
+    font-family: "Libertinus Sans", sans-serif;
+    color: #3f3e3e;
+    font-size: 18px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 8px;
+    /* border: 3px solid green; */
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    margin: 30px;
+    box-shadow: 2px 10px 2px 2px rgba(86, 69, 234, 0.5);
+}
+
+.card img {
+    width: inherit;
+    height: 200px;
+}
+
+.card .tagline {
+    font-size: 17px;
+    color: #000;
+    font-weight: 700;
+    margin: 5px 10px;
+}
+
+.card .tagline span {
+    color: #777;
+}
+
+.card .title {
+    color: rgb(25, 25, 225);
+    font-weight: 900;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+.card .content {
+    font-size: 15px;
+    color: #1d1b1b;
+    line-height: 1.4;
+    margin: 5px 10px;
+}
+
+.card a{
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 15px 10px;
+    background-color: rgb(25, 25, 225);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.card a:hover{
+    background-color: rgb(2, 2, 78);
+    /* padding: 10px 20px; */
+}
+
+@media screen and (max-width: 980px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 740px){
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

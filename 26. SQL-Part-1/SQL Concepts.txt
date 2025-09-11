@@ -1,0 +1,71 @@
+SQL Concepts
+Structured Query Language
+
+Introduction
+Types of Databases
+RDBMS vs DBMS
+Popular RDBMS (MySQL, PostgreSQL, SQLite, etc.)
+Tables, rows, columns, and databases
+
+SQL Queries:
+Basic:
+1. SELECT statement
+2. DISTINCT
+3. WHERE clause (filters)
+4. Logical operators: AND, OR, NOT
+5. Comparison operators: =, !=, <, >, BETWEEN, LIKE, IN
+
+Sorting &  Limiting
+6. ORDER BY
+7. ASC, DESC
+8. LIMIT
+
+Aggregate Functions
+9. COUNT(), SUM(), AVG(), MIN(), MAX()
+10. GROUP BY
+11. HAVING vs WHERE
+
+===================================================================
+
+Types of JOINs:
+12. INNER JOIN
+13. LEFT JOIN / LEFT OUTER JOIN
+14. RIGHT JOIN / RIGHT OUTER JOIN
+15. FULL JOIN (if supported by the DBMS)
+16. Aliases using AS
+
+===================================================================
+
+Data Modification
+17. INSERT INTO
+18. UPDATE
+19. DELETE
+
+Table Management (Basics Only)
+20. CREATE TABLE
+21. ALTER TABLE
+22. DROP TABLE
+23. TRUNCATE TABLE
+
+===================================================================
+
+Constraints & Data Types (Intro)
+23. Not Null
+24. Unique
+25. Primary key
+26. Foreign key
+27. Check 
+28. default
+29. Create Index
+30. Auto Increment
+
+31. Data types: INT, BIGINIT, VARCHAR, TEXT, DATE, TIMESTAMP, BOOLEAN, BLOB etc.
+
+===================================================================
+
+SQL Window Functions
+28. ROW_NUMBER()
+29. RANK()
+30. DENSE_RANK()
+31. SUM(), AVG(), MIN(), MAX()
+32. LEAD() and LAG()

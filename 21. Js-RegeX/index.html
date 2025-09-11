@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js - Regex</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body> 
+    
+    <h1>Regular Expressions</h1>
+
+    <!-- 
+        A RegEx is an object that describes a pattern of characters.
+        It allows us to search for specific patterns of text using the defined patterns.
+    
+        Example:
+         -> To check whether a given string is a valid email or not.
+         -> To check that an entered username should only contain alphabets and numbers.
+
+        RegEx is used in Java, Python etc... other programming languages also.
+
+        Syntax: /pattern-string/flags/ 
+
+        /             ==> defines the start/end of string
+        patter-string ==> define what string this pattern should match
+        flags         ==> defines whether case-sensitive / just search 1st result (or) all results
+
+        use regex101.com website to show examples
+        Eg: This is a black pen. This pen is really smooth. It is a parker PEN.
+
+        Flags:
+          |==> /     ==> only 1st occurance
+          |==> /g    ==> all occurances
+          |==> /i    ==> case-insensitive
+
+        ----------------------------------------------------------------------------------------
+        
+        Sets, Ranges and Character Classes:
+        Sets and Ranges are represented by several characters inside  square brackets [...]. 
+        This just means to "search for any character among given values".
+
+        It has two variatios:
+        1) [ABC] - A or B or C
+        2) [A-Z] - A-Z range
+        3) [0-9] - 0-9 range
+
+        Eg: 
+        Sentence: Air Birm Circle
+        Pattern: /[ABC]irm
+        Pattern: /[A-C]irm
+        
+        Eg:
+        Sentence: He was born in the year 1990 and his age is 29.
+        Pattern1: /[0-9]
+        Pattern2: [a-z][a-z][a-z][0-9]
+        Pattern3: [a-z][A-Z] or [a-zA-Z]
+
+        Character Classes:
+        Pattern1: [\d]
+
+        [ABC]         ==> Starts only with given letters
+        [A-Z], [0-9]  ==> ranges
+        [ABC]ir       ==> starts with A,B,C following with ir
+        [A-Z][0-9]    ==> alphabet followed by number 
+        
+        Character Class: 
+        [\d]              ==> selects all numbers
+        [\D] , [^0-9]     ==> all characters except numbers
+        [\w] [a-zA-Z0-9]  ==> Only alphanumeric
+        [\W]              ==> Except alphanumeric
+        [\s]              ==> only spaces
+        [\S]              ==> not spaces
+        .                 ==> return all characters
+
+        ----------------------------------------------------------------------------------------
+
+        RegEx Quantifiers:  
+        Quantifiers select a value multiple times. They also decide how many times a value should be selected.
+        The value is represented in "{}".
+
+        Syntax: [\d]{3}
+
+        Eg: +91-8374-178-371
+        Pattern: [\d]{2,4}
+
+        Eg: color: #123456; background-color: #121212; color: #12AEC9
+        Pattern: #[\w]{6}
+        
+        Eg: #123456789
+        Pattern: ^#[\w]{6}$
+
+        PanCard Pattern: 
+        ^[a-zA-Z]{5}[0-9]{4}[a-zA-Z]$
+
+        ----------------------------------------------------------------------------------------
+
+        Using RegEx into Js:
+        There are two ways of using RegEx in Js
+        1) /{pattern}/{flags}
+        2) new RegExp('pattern', 'flags')
+
+        RegEx methods in Js:
+        The RegEx class also provides us with some methods to perform search on the strings 
+        based on some patterns.
+
+        Available methods:
+        1) str.search(pattern) - return index value 1st position of string match
+        2) pattern.test(str)  - returns true if pattern is present or false if pattern is not present.
+        3) str.match(pattern) - Returns the matched string. If the flag is not set to global 
+                                then it returns only the first match. But if the flag is set to global 
+                                then it returns an array of matches.
+
+        Example Js Code:
+        var str = "This is a black pen. This pen is really smooth. It is a parker PEN."
+
+        var pattern = /pen/;
+        var pattern = new RegExp('pen', 'gi');
+
+        console.log(str.search(pattern));
+        console.log(pattern.test(str));
+        console.log(str.match(pattern));
+
+        ----------------------------------------------------------------------------------------
+        
+        RegEx Groups:
+
+        var str = "9632104578"
+        var pattern = /[\d]/g
+        var pattern = /[\d]+/g
+        var pattern = /^[\d]{10}$/g - to check if the number is 10 digits or not
+
+        var str = "919632104578"
+        var pattern = /^9?1?[\d]{10}$/g 
+        var pattern = /^(91)?[\d]{10}$/g 
+
+        var str = "+919632104578"
+        var pattern = /^(\+91)?[\d]{10}$/g 
+
+        var str = "www.w3schools.com"
+        var pattern = /^www\.[\w]+\.com?$/g
+        var pattern = /^www\.[\w]+\(.com|co|in)$/g
+
+        console.log(str.match(pattern));
+
+    -->
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+Landing Pages
+
+1. Coffee Shop
+2. Travel Agency
+3. Gym/ Fitness Trainer
+4. Book Store
+5. E-Learning
+6. Music Festival
+7. Movie Website
+8. Restaurant
+9. Photography Gallery
+10. Fashion / Clothing Brand
+11. Charity/ NGO
+12. Pet Adaption Center
+13. Art Exhibition / Artist Showcase
+14. Wedding Planner
+15. Space Exploration / NASA themed / ISRO themed
+16. Bakery Shop
+17. E-Commerce
+18. Medical
+
+
+A. Bharath - 3           
+A. Krishna - 9
+Bala - 12
+Madhusudhan - 14
+Avinash - 13
+G. Neeraj - 4
+G. Vinod - 8
+I. Uzwal - 2
+Iswar Sahu - 18
+Akash - 15
+Sai Navadeep - 17 
+M. Lokesh - 11
+Shafi Uzma - 6
+M. Venkata Ramana - 5
+Naga Harsha - 7
+Mounish - 16
+Abhishek - 10
+Y. Lokesh - 1            
+
+Mandatory Fields:
+Navbar
+Banner
+Contact
+Footer
+Images pop-up
+
+Submission Format:
+
+Infinity E-Learning: https://................
+
+Navbar: https://.............
+
+Slider: https://.............
+
+Gallery: https://.............
+
+E-Commerce: https://.............
+
+Submission Points:
+
+1. File Hierarchy              - 5
+2. Code Maintainance           - 5
+3. Code Output in all devices  - 5
+4. Hosting                     - 5
+
+Submission Deadline: 18th August, 2025 9.00AM
+
+=============================================================
+
+Major Project 1:- Responsive gym website 
+
+NAME:- A.BHARATH
+
+Youtube liks:-
+* navbar:- https://youtu.be/DAuNRzH6sjs?si=CeO6PH8Fpq-nG9tH
+* body:-https://youtu.be/ddaY0rHqMxM?si=VxIqhhWw_xNosDzs
+* footer(not entire):-https://youtu.be/lLdzlLL33G8?si=osw1u18QjYXbyr_-
+
+____________________________________
+* code link:-https://github.com/Bharath2323asundi/Responsive_Gym_landingpage.git
+* host link:-https://bharath2323asundi.github.io/Responsive_Gym_landingpage/
+
+
+-------------------------------------------------------------
+
+G.vinod 
+
+major project :-Restaurant website
+
+code link:- https://github.com/vinodgadaputi/Landing-page.git
+
+hosting link :-https://vinodgadaputi.github.io/Landing-page/
+
+Reference links:-
+
+Navbar yt link:-https://youtu.be/U8smiWQ8Seg?si=tEsVytprPL2YeZmB
+
+gallery yt link:-https://youtu.be/sHG3Sf6XN9g?si=Af3wy7BLxBMSpcQJ
+
+slider yt link:-https://youtu.be/57pXPbTRhCc?si=fhRPH1K4UCfAsTB4
+
+restaurant reference:-https://youtu.be/R8DBM0dalck?si=VmZ9xDNscd0TRR_d
+
+----------------------------------------------------------------
+
+G.Neeraj 
+Book store
+Navbarlink :https://youtu.be/6XmDdIRmg84?t=313&si=kzL3ecqxxrGVf0Uf
+Footersectoin:https://youtu.be/6XmDdIRmg84?t=3451&si=qWwjjtQBjFATHD-e
+Blogssection:https://youtu.be/6XmDdIRmg84?t=3238&si=jqpGqzdx7MlxHTuc
+Featuredsection:https://youtu.be/6XmDdIRmg84?t=2006&si=PCArCiA-KLsdTLef
+
+Code link:https://github.com/Neeraj4518/bookstore.git
+Host link:
+https://neeraj4518.github.io/bookstore/
+
+----------------------------------------------------------------
+
+Name : M.shafi uzma 
+Major project - Music Festival
+
+• code : https://github.com/shafiuzma33/Music-Festival.git
+My website : https://shafiuzma33.github.io/Music-Festival/
+
+• navbar :https://youtu.be/Jhxmc7k7JnQ?si=MumpMVaql1ibOkTN
+• body :https://youtu.be/Jhxmc7k7JnQ?si=MumpMVaql1ibOkTN
+• footer :https://youtu.be/lLdzlLL33G8?si=8TBfZN4sDHGF-twx
+
+----------------------------------------------------------------
+
+Name: I. Uzwal
+Travelling Website
+
+code : https://github.com/IriventyUzwal/travelingagency.git
+host : https://iriventyuzwal.github.io/travelingagency/
+
+Navbar yt : https://youtu.be/U8smiWQ8Seg?si=IhAdgUavXAl6YeNC
+
+Banner yt : https://youtu.be/_oFWg_NlKdo?si=tTrsoH5xaftUOocE
+
+Footer yt: https://youtu.be/YOb67OKw62s?si=U_DJQSo05oWdi2rB
+
+----------------------------------------------------------------
+
+Y.lokesh(coffe shop-major project)
+code:https://github.com/lokeshreddyyama/Coffeshop-Website.git
+host:https://lokeshreddyyama.github.io/Coffeshop-Website/ 
+
+navbar:https://youtu.be/oLgtucwjVII?si=aIYz9oGuMCn-mTaM
+blogsection:https://youtu.be/za-QGYtQU1Y?si=I2G7NFncbZcxXX22
+footer:https://youtu.be/4JQ3q0LVqEI?si=SRpODKxuVGLxVRF0
+
+----------------------------------------------------------------
+
+M Venkata Ramana
+E learning 
+Code:https://github.com/venky141104/e-learing.git
+Host:https://venky141104.github.io/e-learing/
+
+Nav bar:https://youtu.be/-8VPSR_nG_Y?t=872&si=NRqxJ-OMNyea-fJY
+
+Banner:https://youtu.be/-8VPSR_nG_Y?t=1133&si=Onooxi0tFJviA2ES
+Course:https://youtu.be/-8VPSR_nG_Y?t=1563&si=Q2TRhznSuEbJFd1Q
+
+Contact:https://youtu.be/-8VPSR_nG_Y?t=2934&si=55abs8vNblOAZ4RY
+Footer:https://youtu.be/-8VPSR_nG_Y?t=3594&si=j3-eDcOA8oQe0umH
+
+----------------------------------------------------------------
+
+S.Mounish
+Bakery
+Navbar:https://youtu.be/TTOkgUNmNk0?t=292&si=Lf2nbNTQUQ9cMAbr
+
+Fotter:https://youtu.be/TTOkgUNmNk0?t=2535&si=Gp3Cq9aDJVNdpTe3
+
+Home:https://youtu.be/TTOkgUNmNk0?t=860&si=vk8sFmVVJd2BXbmm
+
+Codelink:https://github.com/mounish9177/bakery-website.git
+
+Hostlink:https://mounish9177.github.io/bakery-website/
+
+----------------------------------------------------------------
+
+Bala Jaswanth
+
+Code:-https://github.com/balajashu23/major-project.git
+
+Hosting Link:-https://balajashu23.github.io/major-project
+
+Navabar:-https://youtu.be/xM_P4idtwFc?si=b2ptLcpjVjRIqWd8
+
+Gallary:-https://balajashu23.github.io/major-project/#gallery
+
+Footer:-https://youtu.be/JZ9RSR7IBLM?si=8ztdyzMjGIc6eX_w&t=1
+

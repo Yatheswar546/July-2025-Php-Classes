@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playwrite+MX+Guides&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    /* font-family: "Edu NSW ACT Cursive", cursive; */
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+}
+
+h2{
+  font-family: "Playwrite MX Guides", cursive;
+}
+
+.btn {
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+    margin: 10px;
+    padding: 8px;
+    text-align: center;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-size: 10px;
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Pseudo Classes: state of an element, change in state of an element */
+.btn:hover {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.btn:active {
+    background-color: blueviolet;
+}
+
+.btn:focus {
+    background-color: pink;
+    color: yellow;
+}
+
+/* "hover" is universal i.e. it can work with buttons/links
+    but "focus" and "active" are not universal
+
+    :focus - input/links
+    :active - links/buttons
+*/
+
+input:hover {
+    background-color: red;
+}
+
+input:focus {
+    border: 2px solid blue;
+    background: #0473db;
+}
+
+/* input:active {
+    border: 2px solid blue;
+    background: #0473db;
+} */
+
+h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+h1:focus {
+    color: blue;
+}
+
+h1:active {
+    color: green;
+}
+
+.parent {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
+.child {
+    width: 60px;
+    padding: 10px;
+    margin: 10px;
+    background: orange;
+}
+
+.parent .child:first-child{
+    background-color: rgb(56, 207, 233);
+}
+
+.parent .child:last-child{
+    padding: 30px;
+}
+
+.parent .child:nth-child(4),
+.parent .child:nth-child(2) {
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.parent1 {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent1 .child:first-child {
+    background-color: rgb(255, 0, 132);
+}
+
+.parent1 .child:last-child {
+    padding: 50px;
+}
+
+.appending-data::before {
+    content: 'Hello ';
+}
+
+.appending-data::after {
+    content: ' Developer';
+}
+
+/* content is very important without it we can't access
+    the elements
+*/
+
+.shape {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    background-color: blue;
+}
+
+.shape::before {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 10px;
+
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background-color: red;
+}
+
+
+.shape::after {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 10px;
+
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    background-color: green;
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: aqua;
+
+    /* transition properties: */
+    transition-property: all;
+    transition-delay: 2000ms;
+    transition-duration: 3000ms;
+    transition-timing-function: linear;
+}
+
+.box1:hover {
+    background-color: red;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: aqua;
+    position: relative;
+
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    /* animation-timing-function: cubic-bezier(0.08, 1.12, 1, 0.3); */
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes colorChange {
+    0% {
+        /* transform: translate(0, 0); */
+        background-color: rgb(255, 213, 0);
+    }
+
+    25% {
+        /* transform: translate(170px, 0); */
+        background-color: rgb(0, 255, 8);
+    }
+
+    50% {
+        /* transform: translate(170px, 170px); */
+        background-color: rgb(45, 9, 228);
+    }
+
+    75% {
+        /* transform: translate(0, 170px); */
+        background-color: rgb(4, 243, 231);
+    }
+
+    100% {
+        /* transform: translate(0, 0); */
+        background-color: rgb(0, 0, 0);
+    }
+
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 100%;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    /* animation properties */
+    animation-name: moveAround;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    /* animation-timing-function: cubic-bezier(0.08, 1.12, 1, 0.3); */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes moveAround {
+    0% {
+        transform: translate(0, 0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(170px, 0);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(170px, 170px);
+        background-color: rgb(198, 81, 192);
+    }
+
+    75% {
+        transform: translate(0, 170px);
+        background-color: purple;
+    }
+
+    100% {
+        transform: translate(0, 0);
+        background-color: white;
+    }
+
+}

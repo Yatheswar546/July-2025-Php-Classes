@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <!-- <h1>jQuery</h1> -->
+
+    <!-- 
+        Module    - A single file that contains reusabale functions, variables, classes 
+                Eg: Python -> math (sqrt, pi) ; Js -> utils.js
+        
+        Library   - Collections of module 
+                Eg: Numpy -> Python library for math/arrays
+                    jQuery -> Js library for DOM Manipulation
+
+        Framework - A larger structure that provides a complete environment for building applications
+                Eg: Django (Python web framework)
+                    Angular (Js Framework)
+    -->
+
+    <!-- 
+        => It is a Js library.
+        => It is a fast, lightweight and feature-rich.
+        => It is based on the principle "write less, do more".
+        => If you plan to use it then you wouldn't have to worry about browser support because
+            it is supported by all the major browsers like Chrome, Firefox, Safari, Internet Explorer etc...
+
+        jQuery helps with:
+        1) HTML/DOM Manipulation
+        2) CSS Manipulation
+        3) Handling HTML Event
+        4) Effects and Animations
+        5) Making AJAX Calls
+
+        Advantages of jQuery:
+        1) Save lots of time:
+            It provides you with tons of in-built functionalities that you can directly use or 
+            else you would have to write it yourself using JavaScript.
+
+        2) Simplify common JavaScript tasks:
+            It helps you write the same functionality with lesser lines of code than JavaScript.
+
+        =======================================================================================================
+
+        Import jQuery CDN from official website: https://releases.jquery.com/
+
+        =======================================================================================================
+
+        Selectors and Filters:
+
+        Basic Syntax to use jQuery:  
+            $(selector).method()
+            
+        ==> $        : used to access jQuery
+        ==> selector : used to find HTML elements
+        ==> method() : used to perform some action on selected element(s).
+
+        Selectors and Filters provide a way of finding and extracting information from our web page.
+
+        (i) Selectors are used to select the HTML elements using CSS-like selectors.
+            Eg: $('p')
+                The above statement will select all HTML elements with <p> tag.
+                
+                $('#navbar')
+                $('.container')
+                $('li')
+        
+        (ii) Filters are used to refine the results returned from the selectors.
+             Eg: $('p:first')
+                 This ":something" is a filter which selects the first paragraph returned by $('p') selector.
+                 The above line of code can also be written like this - $('p').first()
+                
+                 $('input[type]')
+                 $('input[type=text]')
+                 $('list-item').eq(2) ==> 3rd element
+
+        =======================================================================================================
+
+        ==> $(document).ready() : It is a function that tells whether DOM tree is generated (or) not.
+        
+        In Js:
+        window.onload = function() {
+           console.log("Page loaded");
+        };
+
+        In jQuery:
+        $(document).ready(function() {
+            ....................
+            ....................        
+        });
+
+        =======================================================================================================
+
+        Add and Update HTML Elements:
+
+        1) "html()" method:
+            In Js     -> .innerHTML
+            In jQuery -> .html()
+
+            We can use html() method to get content of the selected HTML element. This content can either be text or more HTML elements.
+
+            Syntax:
+            To get values: $('selector').html()
+            To set value: $('selector').html(childElement)
+
+            Eg: 
+                $('#1').html()
+                $("#1").html("<li>New Item</li>");
+
+        2) "append()" method:
+            for adding elements
+
+            Eg:
+                $("#itemList").append("<li>List Item 1</li>");
+                $("#itemList").append("<li>List Item 2</li>");
+                $("#itemList").append("<li>List Item 3</li>");
+
+        3) "remove()" method:
+            to remove elements
+
+            Eg: 
+                $("#itemList").remove()
+                $("#itemList:first").remove()
+        
+        =======================================================================================================
+
+        Add / Update Styles:
+
+        1) "css()" method:
+            It accepts the css property name as argument and return value of the first matched HTML element.
+                
+            In Js: document.querySelector("section").style.backgroundColor = "red";
+
+            Syntax: 
+                accessing: $('selector').css('property-name');
+                updating:  $('selector').css('property-name', 'new-value');
+
+                $('selector').css({
+                    'property-1': 'new-value',
+                    'property-2': 'new-value',
+                    'property-3': 'new-value'
+                });
+
+            Eg: 
+                $('section').css('background-color');
+                $('section').css('background-color', 'red');
+
+        =======================================================================================================
+
+        HTML Classes:
+
+        1) Add class:
+            $('selector').addClass('class');
+        
+        2) Remove class:
+            $('selector').removeClass('class');
+
+        3) Toggle class:
+            $('selector').toggleClass('class');
+
+        =======================================================================================================
+
+        Handling Events:
+
+        Syntax: 
+            $('selector').event-name(function() {
+                // action when event is triggered
+            });
+
+        Eg:
+            var btn = $('#btn');
+            btn.click(function() {
+                .........
+                .........
+            });
+
+    -->
+
+    <div class="container container1">
+        <h2>Item List</h2>
+        <div class="input-section">
+            <input type="text" placeholder="Enter item..." id="itemInput">
+            <!-- <input type="number" placeholder="Enter number..." id="itemNumber">
+            <input placeholder="Enter item..." id="item"> -->
+
+            <button id="addBtn">Add Item</button>
+        </div>
+        <ul id="itemList">
+            <!-- Items will appear here -->
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

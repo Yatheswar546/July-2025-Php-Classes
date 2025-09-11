@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 03 - CSS</title>
+
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- CSS - Cascading Style Sheet (Styling) 
+        Types: Inline, Internal, External
+        Inline > Internal > External
+    -->
+
+    <!-- <h1 style="color: red">Types of CSS</h1> -->
+
+    <!-- CSS Selectors 
+        1) tag selectors 
+        2) class selectors  - .
+        3) id - # 
+        4) universal - *
+        5) grouping - multiple tags, class, id
+    -->
+    <!-- <h1>CSS Selectors</h1> -->
+
+    <!-- <h1 class="heading1">Class Selector 1</h1>
+    <h2 class="heading2">Class Selector 2</h1>
+
+    <h3 id="heading3">ID Selector 1</h1>
+    <h1 id="heading4">ID Selector 2</h1> -->
+
+    <!-- Colors
+        1) color name 
+        2) rgb/rgba - (red, green, blue) - (0,255);  (red, green, blue, alpha) - alpha (0-1)
+        3) hex -   #00 00 00 / #000  (0-f)
+    -->
+
+    <!-- <h1>Colors</h1>
+    <h2 class="color">Color - Using color name</h2>
+    <h2 class="rgb">Color - Using rgb/rgba</h2>
+    <h2 class="hex">Color - Using hex</h2>     -->
+
+
+    <!-- BOX MODEL
+        1. Padding - Internal Spacing
+        2. Margin  - External Spacing
+        3. Border
+        4. Outline
+    -->
+
+    <!-- <h1>BOX MODEL</h1>
+
+    <h1 class="box1">BOX 1</h1>
+    <h1 id="box2">BOX 2</h1> -->
+
+    <!-- <h1 style="text-align: center">Display & Positions</h1> -->
+    <!-- 
+        Display:
+        1. Block
+        2. Inline
+        3. Inline-Block
+        4. none
+    -->
+
+    <!-- <h2>Example of Display: Block</h2>
+    <div class="parent">
+        <div class="block1">MERN</div>
+        <div class="block2">MEAN</div>
+        <div class="block3">JAVA</div>
+        <div class="block4">C</div>
+        <div class="block5">Python</div>
+    </div> -->
+
+    <!-- <h2>Example of Display: Inline</h2>
+    <div class="parent">
+        <div class="inline1">MERN</div>
+        <div class="inline2">MEAN</div>
+        <div class="inline3">JAVA</div>
+        <div class="inline4">C</div>
+        <div class="inline5">Python</div>
+    </div> -->
+
+    <!-- <h2>Example of Display: Inline-Block</h2>
+    <div class="parent">
+        <div class="inline-block1">MERN</div>
+        <div class="inline-block2">MEAN</div>
+        <div class="inline-block3">JAVA</div>
+        <div class="inline-block4">C</div>
+        <div class="inline-block5">Python</div>
+    </div> -->
+
+    <!-- <h2 class="none">Example of Display: None</h2> -->
+
+    <!-- POSITIONS
+        1. Static : Default
+        2. Fixed  : Position is fixed & offset value works w.r.t screen
+        3. Sticky : Similar to fixed but only gets fixed at the required position
+        4. Relative : It's relative to its original position
+        5. Absolute : Moves w.r.t to parent of relative position & offset works w.r.t body as default parent 
+     -->
+
+    <!-- <h1 style="text-align: center; border: 1px solid black;">Positions</h2> -->
+
+    <!-- <div class="static">
+        <h2>Static</h2>
+    </div> -->
+
+    <!-- <div class="fixed">
+        <h2>Fixed</h2>
+    </div> -->
+
+    <!-- <h2 style="font-size: 30px;">Sticky</h2>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4 class="sticky">Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4>
+    <h4>Hello</h4> -->
+
+    <!-- <div class="relative">
+        <h2>Relative</h2>
+    </div> -->
+
+    <!-- <h2>Absolute</h2> -->
+    <!-- <div class="parent1">
+        <div class="child1">
+
+        </div>
+    </div> -->
+
+    <!-- Default screen is parent class as relative -->
+    <!-- <div class="absolute">
+
+    </div> -->
+
+    <!-- Transform Translate 
+        Place square at centre of screen & place circle in it 
+    -->
+    <div id="square"></div>
+    <div class="circle"></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Day 02</title>
+
+    <style>
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!----------- TABLES ------------->
+    <h2>Tables</h2>
+
+    <table>
+        <thead>
+            <th>S.No</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yatheswar</td>
+                <td>yathe@gmail.com</td>
+                <td>8652103497</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Vinod</td>
+                <td>vinod@gmail.com</td>
+                <td>8561203479</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!--------- RowSpan & ColSpan ------------>
+
+    <table>
+        <thead>
+            <th>S.No</th>
+            <th colspan="2">Full Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yatheswar</td>
+                <td>Ethalapaka</td>
+                <td>yathe@gmail.com</td>
+                <td>8652103497</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <table>
+        <thead>
+            <th>Full Name</th>
+            <td>Yatheswar</td>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>8652103497</td>
+            </tr>
+            <tr>
+                <td>9652103478</td>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="../image2.jpeg" alt="" width="70px" height="70px"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!----------- LISTS ------------>
+    <h2>LISTS</h2>
+    <!-- 
+        1) Unordered List - ul
+        2) Ordered List   - ol
+        3) Description List - dl
+    -->
+
+    <!-- type="circle/disc/square/none" -->
+    <ul type="circle">
+        <li>Vinod</li>
+        <li>Shafi</li>
+        <li>Sahu</li>
+        <li>Bharath</li>
+        <li>Krishna</li>
+    </ul>
+
+    <!-- type="1/i/A/a" -->
+    <ol type="i" start="6">
+        <li>Vinod</li>
+        <li>Shafi</li>
+        <li>Sahu</li>
+        <li>Bharath</li>
+        <li>Krishna</li>
+    </ol>
+
+    <dl>
+        <dt>Rohit Sharma</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio qui, nobis eligendi tempore expedita
+            tenetur accusamus accusantium eius cumque totam quidem commodi alias consequuntur numquam nisi neque unde
+            non.
+            Sint aspernatur odit delectus temporibus, modi minima, quis nulla qui magni, libero voluptatum ducimus
+            nostrum suscipit cupiditate accusantium. Voluptatem eum rerum, officiis commodi hic tempora reiciendis
+            quisquam ipsam adipisci nesciunt.
+            Porro ratione nemo quos veritatis ipsum eos reiciendis officia a explicabo ex, voluptatem sed temporibus
+            nobis suscipit dolor quibusdam alias rerum, ad distinctio doloribus labore ullam animi hic? Esse, atque!
+            Repudiandae veritatis, natus accusamus delectus nihil commodi, distinctio placeat dolor quis eius fugiat non
+            perspiciatis nulla necessitatibus itaque error? Hic dicta quo ipsa quod. Nostrum exercitationem odit maxime
+            a ratione.
+            Reiciendis impedit nulla maxime et. Sapiente magnam suscipit qui obcaecati sequi. Ratione tenetur sint
+            mollitia culpa quod ullam distinctio, voluptas esse iste minima doloremque ea sed odit dolores unde
+            temporibus!
+        </dd>
+
+        <dt>Virat Kohli</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, earum tempora sapiente autem harum dolore
+            quibusdam tempore, quo voluptate impedit iusto consequuntur labore repudiandae voluptatum aut maxime dolor
+            quia!
+            Voluptates blanditiis ullam, culpa itaque adipisci at voluptatibus sint, aut eos ipsum minus placeat vitae
+            corrupti. Cumque delectus, officiis odio sed ut exercitationem dolorum deserunt excepturi beatae, natus
+            dolor! Earum.
+            Expedita nemo aliquid, dicta corporis reiciendis dolore quas quis voluptatum voluptatibus necessitatibus cum
+            repellat eius enim consequuntur ratione natus iste quam hic? Adipisci repellat quasi tempore iste vero
+            laudantium voluptas.
+            Saepe id sint sed temporibus tenetur autem eligendi perspiciatis expedita esse maiores velit asperiores
+            rerum, mollitia placeat tempora vel dicta nesciunt a iure voluptas provident nam quidem vitae. Consequuntur,
+            amet!
+            Ipsa at consequuntur fugiat. Quas, nostrum aspernatur ipsam tempore nulla ipsa, aperiam accusantium ullam
+            sit laborum unde neque? Neque nemo aspernatur, fugit vero eum reprehenderit? Quasi eveniet reiciendis atque
+            recusandae!
+        </dd>
+
+        <dt>MS Dhoni</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam, earum tempora sapiente autem harum dolore
+            quibusdam tempore, quo voluptate impedit iusto consequuntur labore repudiandae voluptatum aut maxime dolor
+            quia!
+            Voluptates blanditiis ullam, culpa itaque adipisci at voluptatibus sint, aut eos ipsum minus placeat vitae
+            corrupti. Cumque delectus, officiis odio sed ut exercitationem dolorum deserunt excepturi beatae, natus
+            dolor! Earum.
+            Expedita nemo aliquid, dicta corporis reiciendis dolore quas quis voluptatum voluptatibus necessitatibus cum
+            repellat eius enim consequuntur ratione natus iste quam hic? Adipisci repellat quasi tempore iste vero
+            laudantium voluptas.
+            Saepe id sint sed temporibus tenetur autem eligendi perspiciatis expedita esse maiores velit asperiores
+            rerum, mollitia placeat tempora vel dicta nesciunt a iure voluptas provident nam quidem vitae. Consequuntur,
+            amet!
+            Ipsa at consequuntur fugiat. Quas, nostrum aspernatur ipsam tempore nulla ipsa, aperiam accusantium ullam
+            sit laborum unde neque? Neque nemo aspernatur, fugit vero eum reprehenderit? Quasi eveniet reiciendis atque
+            recusandae!
+        </dd>
+
+    </dl>
+
+    <!------ SEMANTIC TAGS ------>
+    <div>
+        <h2>div</h2>
+    </div>
+
+    <nav>
+        <h2>nav</h2>
+    </nav>
+
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <footer>
+        <h2>footer</h2>
+    </footer>
+
+    <article>
+        <h2>Article</h2>
+    </article>
+
+    <section>
+        <h2>section</h2>
+    </section>
+
+</body>
+
+</html>

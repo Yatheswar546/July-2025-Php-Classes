@@ -1,0 +1,29 @@
+BackEnd Authentication:
+
+Verifying a User:
+
+Step 1: Create a User (Registration)
+            |--> Read user's data and push it into Database.
+
+Step 2: Checking a User (Login)
+            |--> Fetching Details from DB
+            |--> Comparing details from DB and login form
+            |--> Confirming
+
+=======================================================================
+
+Step 1: Creating a User (Registration)
+        a) Set up HTML form correctly (action, method, enctype, name attributes to each input tag, value attribute, submit button)
+        b) just cross-check your form's input fields with database structure
+        c) Access data from form in php file
+        d) Images
+            |--> extract the image's name, type (extension), rename, encrypt the image-name to store in DB.
+            |--> store the image with new name (same as in DB) in another folder.
+        e) Form Validation 
+        f) Insert Data into DB.
+
+Step 2: Checking a User (Login)
+        a) Set up HTML form correctly (action, method, enctype, name attributes to each input tag, value attribute, submit button)
+        b) Access data from form in php file
+        c) Access data from DATABASE.
+        d) Validating of data (comparison of form-data and database-data)

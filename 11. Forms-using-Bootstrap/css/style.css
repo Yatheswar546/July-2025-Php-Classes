@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(20, 247, 69);
+}
+
+.forms{
+    width: 35%;
+    background-color: #fff;
+    /* border: 2px solid red; */
+}
+
+.forms input{
+    border: 1px solid #807e7e;
+}
+
+.forms label{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    /* color: rgb(11, 15, 242); */
+}
+
+a:hover{
+    color: blue;
+}
+
+form div{
+    margin-bottom: 10px !important;
+}
+
+.login-form{
+    width: 25%;
+}
